@@ -16,6 +16,9 @@ class Character:
         if self.hp < 0:
             self.hp = 0
 
+    def heal(self, amount):
+        self.hp += amount
+
     def is_alive(self):
         return self.hp > 0
 
