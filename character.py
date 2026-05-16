@@ -7,3 +7,8 @@ class Character:
 
     def attack(self, enemy):
         enemy.hp -= self.attack_power
+
+    def take_damage(self, amount):
+        self.hp -= amount
+        if self.hp < 0:
+            self.hp = 0
