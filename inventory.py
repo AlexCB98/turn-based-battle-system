@@ -15,4 +15,4 @@ class Inventory:
             character.heal(self.healing_amount)
             self.potion_count -= 1
         else:
-            print('No potions left!')
+            print('\n ** No potions left! **\n')
