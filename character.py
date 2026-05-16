@@ -4,3 +4,6 @@ class Character:
         self.name         = name
         self.hp           = hp
         self.attack_power = attack_power
+
+    def attack(self, enemy):
+        enemy.hp -= self.attack_power
